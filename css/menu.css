@@ -1,0 +1,145 @@
+/* LAYOUT GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* PANEL IZQUIERDO (SIDEBAR) */
+.sidebar {
+    width: 200px;
+    background-color: #004d3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    /* >>> Ajuste 1: Bajar la imagen del usuario y los botones */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    padding-top: 50px; /* Incrementa el padding superior para bajar todo el contenido */
+}
+
+.user-icon {
+    width: 80px;
+    margin-bottom: 30px; /* Aumenta el margen inferior para separar más de los botones */
+    border: 1px solid #d3d3d3; 
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Botones dentro del SIDEBAR */
+.sidebar button {
+    width: 80%;
+    padding: 8px 12px;
+    margin: 8px 0; /* Aumentar margen vertical entre botones */
+    font-size: 16px;
+    background-color: #d1d1d1;
+    color: #333;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sidebar button:hover {
+    background-color: #bfbfbf;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-container {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BARRA SUPERIOR (TOPBAR) */
+.topbar {
+    background-color: #d1d1d1; /* Gris claro */
+    padding: 8px 20px;
+    display: flex;
+    /* CAMBIO CLAVE 1: Centrar horizontalmente los elementos */
+    justify-content: center; 
+    align-items: center;
+    height: 60px; 
+}
+
+/* Estilo para la imagen del título */
+.topbar .logo-img {
+    /* CAMBIO CLAVE 2: Hacer la imagen más grande */
+    height: 50px; /* Incrementamos la altura (antes era 40px) */
+    width: auto;
+    /* Eliminamos el margen derecho ya que ahora está centrada */
+    margin: 0; 
+}
+
+.btn-logout {
+    /* MANTENER: Posicionar el botón de cerrar sesión a la derecha */
+    position: absolute; /* Permite posicionarlo independientemente del centrado */
+    right: 20px;
+    padding: 5px 10px;
+    background: #bfbfbf;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* CONTENIDO CENTRAL */
+.content {
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente todo el contenido */
+    justify-content: center; /* Centrar verticalmente todo el contenido */
+    padding: 20px;
+    text-align: center; /* Asegura que el texto dentro también se centre */
+}
+
+.content h2 {
+    margin-top: 0; /* Eliminar margen superior para el título si el content ya centra */
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px; /* Un poco más grande para el título */
+    /* >>> Ajuste 2: Quitar el color anterior para usar la imagen */
+    /* color: #333; */
+}
+
+/* PANEL DE IMÁGENES */
+.images {
+    display: flex;
+    /* >>> Ajuste 3: Mejor distribución de las imágenes */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: flex-end; /* Alinea las imágenes a la parte inferior de su contenedor */
+    gap: 30px; /* Aumentar el espacio entre las imágenes */
+    margin-top: 30px; /* Margen superior para separarlas del título */
+    margin-bottom: 50px; /* Margen inferior para separarlas del pie de página */
+}
+
+.images img:nth-child(1) { /* Imagen de fondo/escena (fondoMenu.png) */
+    width: 400px; /* Un poco más grande */
+    height: auto;
+}
+
+.images .icon-group { /* Nuevo contenedor para los iconos de la derecha */
+    display: flex;
+    flex-direction: column; /* Coloca los iconos uno encima del otro */
+    align-items: center;
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+.images .icon-group img { /* Estilo para los iconos (semilla y estadísticas) */
+    width: 80px; /* Iconos más grandes */
+    height: auto;
+}
+
+/* >>> Ajuste 3: Estilo para el pie de página */
+.footer-text {
+    margin-top: 50px; /* Separar del contenido principal */
+    font-size: 18px; /* Un poco más grande para el pie de página */
+    color: #555;
+    font-weight: bold; /* Hacerlo más notable */
+}

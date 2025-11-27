@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KontAgro - Egresos</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/egresos.css"> </head>
+<body>
+
+    <div class="sidebar">
+        <img class="user-icon" src="img/icono-usuario.png" alt="agricultor"> 
+        <button onclick="irInicio()">Inicio</button> 
+        <button onclick="irIngresos()">Ingresos</button>
+        <button class="active" onclick="irEgresos()">Egresos</button> <button onclick="irActividades()">Actividades</button>
+    </div>
+
+    <div class="main-container">
+
+        <div class="topbar">
+            <img class="logo-img" src="img/titulo.png" alt="KontAgro Logo"> 
+            <button class="btn-logout" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+
+        <div class="content">
+            
+            <h2 class="panel-title">Panel de Egresos</h2> <div class="income-view">
+                <div class="income-list">
+                    <h3>Egresos Registrados</h3> <table id="egresos-table"> <thead>
+                            <tr>
+                                <th>Actividad</th>
+                                <th>Fecha</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="income-stats">
+                    <p>Gráfico de Estadísticas</p>
+                    <img src="img/egresos.png" alt="Gráfico de Egresos" class="chart-placeholder">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/egresos.js"></script> </body>
+</html>

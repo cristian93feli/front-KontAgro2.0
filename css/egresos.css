@@ -1,0 +1,85 @@
+/* Estilos Específicos para Egresos (Copia de ingresos.css con el botón activo ajustado) */
+
+/* Asegurar que el botón "Egresos" se vea activo */
+.sidebar button.active {
+    background-color: #f0f0f0; /* Color más claro para indicar que está seleccionado */
+    font-weight: bold;
+}
+
+/* El resto de los estilos es idéntico al de ingresos.css para mantener el layout */
+
+/* Título de la vista */
+.panel-title {
+    text-align: center;
+    font-size: 2em;
+    color: #004d3a; 
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+/* Layout de la vista: Lista de Egresos (Tabla) y Gráfico (Stats) */
+.income-view {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.income-list {
+    flex: 2; 
+    max-width: 600px;
+}
+
+.income-list h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d1d1d1;
+    padding-bottom: 5px;
+}
+
+/* Estilo de la tabla de Egresos */
+#egresos-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+#egresos-table th, #egresos-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#egresos-table thead {
+    background-color: #004d3a; 
+    color: white;
+}
+
+#egresos-table tbody tr:hover {
+    background-color: #f5f5f5; 
+    cursor: pointer;
+}
+
+/* Estilo para el área de estadísticas/gráfico (derecha) */
+.income-stats {
+    flex: 1; 
+    min-width: 250px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-stats .chart-placeholder {
+    width: 150px;
+    height: auto;
+    opacity: 0.5;
+}

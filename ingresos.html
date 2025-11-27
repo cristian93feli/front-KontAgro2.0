@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KontAgro - Ingresos</title>
+    <link rel="stylesheet" href="css/menu.css"> 
+    <link rel="stylesheet" href="css/ingresos.css"> </head>
+<body>
+
+    <div class="sidebar">
+        <img class="user-icon" src="img/icono-usuario.png" alt="agricultor"> 
+        <button class="btn-inicio" onclick="irInicio()">Inicio</button>
+        <button class="btn-ingresos" onclick="irIngresos()">Ingresos</button>
+        <button class="btn-egresos" onclick="irEgresos()">Egresos</button>
+        <button class="btn-actividades" onclick="irActividades()">Actividades</button>
+    </div>
+
+    <div class="main-container">
+
+        <div class="topbar">
+            <img class="logo-img" src="img/titulo.png" alt="KontAgro Logo"> 
+            <button class="btn-logout" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+
+        <div class="content">
+            
+            <h2 class="panel-title">Panel de Ingresos</h2>
+            
+            <div class="income-view">
+                <div class="income-list">
+                    <h3>Ingresos Registrados</h3>
+                    
+                    <table id="ingresos-table">
+                        <thead>
+                            <tr>
+                                <th>Actividad</th>
+                                <th>Fecha</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="income-stats">
+                    <p>Gráfico de Estadísticas</p>
+                    <img src="img/icono-estadisticas.png" alt="Gráfico de Ingresos" class="chart-placeholder">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/ingresos.js"></script> </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/fondo.png") no-repeat center center fixed; 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.login-box {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 8px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.olv {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+}
