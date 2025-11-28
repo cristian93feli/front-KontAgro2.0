@@ -2,7 +2,7 @@ function login() {
     const usuario = document.getElementById("usuario").value;
     const contrasena = document.getElementById("contrasena").value;
 
-    fetch("http://localhost:8080/api/usuario/login", {
+    fetch("https://kontagro20-production.up.railway.app/api/usuario/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ usuario, contrasena })

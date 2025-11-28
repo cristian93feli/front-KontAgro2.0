@@ -1,6 +1,6 @@
 // ingresos.js
 
-const API_BASE_URL = 'http://localhost:8080/'; // Ajusta si usaste otra URL/puerto
+const API_BASE_URL = 'https://kontagro20-production.up.railway.app/'; // Ajustar si usaste otra URL/puerto
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarIngresos();
