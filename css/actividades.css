@@ -17,7 +17,7 @@
     padding-top: 10px;
 }
 
-/* Layout de la vista: Lista de Actividades (Tabla) y Gráfico (Stats) */
+/* --- LAYOUT AJUSTADO PARA DAR MÁS ESPACIO AL GRÁFICO --- */
 .income-view {
     display: flex;
     justify-content: center; 
@@ -27,8 +27,8 @@
 }
 
 .income-list {
-    flex: 2; 
-    max-width: 600px;
+    flex: 1.5; /* CORRECCIÓN: Reducido de 2 a 1.5 para dar más espacio al gráfico */
+    max-width: 500px; /* CORRECCIÓN: Reducido de 600px */
 }
 
 .income-list h3 {
@@ -64,10 +64,12 @@
     cursor: pointer;
 }
 
+/* --- ESTILOS DE GRÁFICO (income-stats) CORREGIDOS --- */
+
 /* Estilo para el área de estadísticas/gráfico (derecha) */
 .income-stats {
     flex: 1; 
-    min-width: 250px;
+    min-width: 400px; /* CORRECCIÓN: Aumentado el ancho mínimo de 250px a 400px */
     padding: 20px;
     background-color: #f8f8f8;
     border: 1px solid #ddd;
@@ -79,7 +81,6 @@
 }
 
 .income-stats .chart-placeholder {
-    width: 150px;
+    width: 90%; /* CORRECCIÓN: Aumentado de 150px a 90% para que ocupe el contenedor */
     height: auto;
-    opacity: 0.5;
 }
